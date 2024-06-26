@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Component</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Enter Message</ion-label>
+    <ion-input [(ngModel)]="message"></ion-input>
+  </ion-item>
+  <ion-button (click)="sendMessage()">Send Message to Tab 2</ion-button>
+
+  <ion-button (click)="goToTab2()">Go to Tab 2</ion-button>
+
+</ion-content>

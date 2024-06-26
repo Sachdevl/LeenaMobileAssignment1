@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Canada Covid Data
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <p>Total Deaths: {{ totalDeaths }}</p>
+        <p>Total Cases: {{ totalCases }}</p>
+        <p>Total Rate Deaths: {{ totalRateDeaths }}</p>
+        <p>Rate Deaths Last 7: {{ rateDeathsLast7 }}</p>
+        <p>Rate Deaths Last 14: {{ rateDeathsLast14 }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h1>Ontario  Status</h1>
+        <p>Total Presumptive Positives: {{ totalPresumptivePositive }}</p>
+        <p>Confirmed Positives: {{ confirmedPositive }}</p>
+        <p>Total Ontario Cases: {{ totalCasesOntario }}</p>
+        <p>Total Deaths Ontario: {{ deaths }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button routerLink="/mypage">Go to My Page</ion-button>
+
+</ion-content>
+
